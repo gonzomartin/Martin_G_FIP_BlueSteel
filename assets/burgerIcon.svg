@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.3429 14.15">
+  <defs>
+    <style>
+      .d {
+        fill: none;
+        stroke: #1c1f75;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="a" data-name="Capa 1"/>
+  <g id="b" data-name="Capa 2">
+    <g id="c" data-name="homePage">
+      <g>
+        <line class="d" x1="1" y1="1" x2="22.3429" y2="1"/>
+        <line class="d" x1="1" y1="7.075" x2="16.0643" y2="7.075"/>
+        <line class="d" x1="1" y1="13.15" x2="22.3429" y2="13.15"/>
+      </g>
+    </g>
+  </g>
+</svg>
