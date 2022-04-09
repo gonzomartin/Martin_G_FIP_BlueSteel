@@ -16,6 +16,7 @@ a {
 
 /* Navigation Set up */
 
+
 .navMenu button {
 	background: url(../assets/burgerIcon.svg) left no-repeat;
 	height: 20px;
@@ -23,7 +24,7 @@ a {
 	border: 1px;
 	transition: all .3s ease;
 	margin-right: auto;
-  margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .navMenu button.expanded {
@@ -31,8 +32,7 @@ a {
 }
 
 .navMenu {
-	display: flex;
-	flex-direction: column;
+	align-self: center;
 }
 
 .navMenu li a {
@@ -40,6 +40,12 @@ a {
 	color: #1c1f75;
 	padding: 10px 0 10px 0;
 	text-align: left;
+}
+.navMenu li a:hover {
+	border-bottom: 3px solid #ce9500;
+	padding-bottom: 5px;
+	background-color: transparent;
+	font-weight: 700;
 }
 
 
@@ -50,23 +56,27 @@ a {
 .burgerMenu {
   margin-bottom: 10px;
 	display: none;
+	text-align: right;
 }
 
 .burgerMenu.slideToggle {
 	display: block;
 }
 
-.bsLogo {
-  display: block;
-  max-width: 120px;
-  margin: 0 auto;
-  margin-bottom: 20px;
+.header {
+	display: flex;
 }
 
+.logo {
+	flex-direction: column;
+	justify-content: center;
+	max-width: 180px;
+}
+
+
+
+
 @media screen and (min-width: 60em) {
-  .header {
-    margin-top: 20px;
-  }
 
   #button {
     display: none;
@@ -75,15 +85,12 @@ a {
   .burgerMenu {
     display: flex;
     flex-direction: column;
-    margin: 0;
   }
+
   .navMenu {
-    text-align: right;
+    text-align: left;
     margin-left: auto;
     margin-right: 5%;
-  }
-  .burgerMenu {
-    text-align: right;
   }
   .navMenu li {
     border-bottom: none;
@@ -107,17 +114,16 @@ a {
     border-top: none;
   }
 
-  .logo {
-    display: flex;
-    margin-bottom: 20px;
-  }
-
-  .bsLogo {
-    margin-left: 5%;
-    margin-right: auto;
-    align-content: flex-start;
-    max-width: 180px;
-  }
+	.header {
+		display: flex;
+		margin-top: 20px;
+		margin-bottom: 20px
+	}
+	.logo {
+		flex: auto;
+		max-width: 180px;
+		margin-left: 5%;
+	}
 }
 
 
@@ -154,7 +160,4 @@ a {
   .textMB, .textBottle {
     font-size: 50px;
   }
-
-
-
 }
