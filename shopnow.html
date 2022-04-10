@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Index Page</title>
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/shopnow.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Georama:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="assets/blueSteel_logo.svg" alt="BlueSteel Logo" class="bsLogo"></a>
+    </div>
+    <nav class="navMenu">
+      <h2 class="hide">Main Menu</h2>
+      <button id="button"></button>
+      <div class="burgerMenu">
+        <ul class="menuList">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ourbeer.html">Our Beer</a></li>
+          <li class="select"><a href="shopnow.html">Shop Now</a></li>
+          <li><a href="#">Merch</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="mainBanner">
+    <h2 class="hide">Principal Banner</h2>
+  </section>
+  <div class="bottomLine"></div>
+
+  <section class="pageCount">
+    <h2 class="hide">Page Count links nav</h2>
+    <div class="countCont">
+      <a href="index.html"><h3 class="notselected">Home / </h3></a>
+      <a href="shopnow.html"><h3 class="selected"> Shop Now</h3></a>
+    </div>
+  </section>
+
+  <section class="productInfoCont">
+    <div class="prodPicCont">
+      <div class="productPic">
+        <div class="bigPic">
+          <img src="images/prodPic-100.jpg" alt="Product picture">
+
+        </div>
+      </div>
+      <nav class="picsMenu">
+        <ul>
+          
+        </ul>
+
+
+      </nav>
+    </div>
+    <div class="prodInfCont">
+      <div class="prodInfo">
+
+      </div>
+      <div class="prodFacts">
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="foot">
+    <h2 class="hide">Footer</h2>
+    <div class="f-logo">
+      <img src="assets/Shild.svg" alt="Shield Blue Steel">
+    </div>
+    <div class="f-form">
+              <div>
+                  <div>
+                      <h3 class="f-text">Want to say thanks?</h3>
+                  </div>
+                  <form action="email.php" method="POST" enctype="text/plain">
+                      <input class="border-bottom" name="contactInfo" type="text" required placeholder="Name">
+                      <input class="border-bottom" name="contactInfo" type="text" required placeholder="Email">
+                      <input class="border-submit" name="submit" type="submit" value="Submit">
+                  </form>
+              </div>
+    </div>
+  </footer>
+
+
+<script src="js/shopnow.js"></script>
+</body>
+</html>

@@ -1,0 +1,410 @@
+@charset "UTF-8";
+
+.hide {
+	display: none;
+}
+
+body {
+	font-family: 'Georama', Helvetica, Arial, sans-serif;
+	/*! padding: 20px; */
+  background-color: #fffcf8;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Navigation Set up */
+
+
+.navMenu button {
+	background: url(../assets/burgerIcon.svg) left no-repeat;
+	height: 20px;
+	width: 20px;
+	border: 1px;
+	transition: all .3s ease;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.navMenu button.expanded {
+	transform: rotate(90deg);
+}
+
+.navMenu {
+	align-self: center;
+}
+
+.navMenu li a {
+	display: block;
+	padding: 10px 0 10px 0;
+	text-align: left;
+}
+.navMenu li a:hover {
+	border-bottom: 3px solid #ce9500;
+	font-weight: 700;
+}
+
+.select {
+  font-weight: 700;
+}
+
+.navMenu li:first-child {
+	border-top: 2px solid #ce9500;
+}
+
+.burgerMenu {
+  margin-bottom: 10px;
+	display: none;
+	text-align: right;
+}
+
+.burgerMenu.slideToggle {
+	display: block;
+	margin-left: 20px;
+}
+
+.header {
+	display: flex;
+}
+
+.logo {
+	flex-direction: column;
+	justify-content: center;
+	max-width: 180px;
+}
+
+
+@media screen and (min-width: 50em) {
+
+  #button {
+    display: none;
+  }
+
+  .burgerMenu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navMenu {
+    text-align: left;
+    margin-left: auto;
+    margin-right: 5%;
+  }
+  .navMenu li {
+    border-bottom: none;
+    display: inline;
+    margin-left: 20px;
+  }
+  .navMenu li a {
+    display: inline;
+    padding: 5px 0 5px 0;
+    text-decoration: none;
+    color: #1c1f75;
+  }
+  .navMenu li a:hover {
+    border-bottom: 3px solid #ce9500;
+    padding-bottom: 5px;
+    background-color: transparent;
+    font-weight: 700;
+  }
+  .navMenu li:first-child {
+    border-top: none;
+  }
+
+	.header {
+		display: flex;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.logo {
+		flex: auto;
+		max-width: 180px;
+		margin-left: 5%;
+	}
+}
+
+
+/* Brand Video Section */
+
+.videoB {
+  width: -moz-available;
+}
+
+.bottomLine {
+  border-bottom: 2px solid #ce9500;
+  max-width: 100%;
+  margin-bottom: 20px;
+	align-self: baseline;
+	padding-bottom: 20px;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+/* page count Section */
+
+.pageCount {
+  margin-left: 5%;
+  margin-bottom: 20px;
+}
+.countCont {
+  display: flex;
+}
+
+.selected {
+  font-family: 'Georama', Helvetica, Arial, sans-serif;
+  color: #ce9500;
+  font-weight: 700;
+}
+.notselected {
+  font-family: 'Georama', Helvetica, Arial, sans-serif;
+  color: #ce9500;
+  font-weight: 300;
+}
+
+/* Brand History */
+
+.brandHistory {
+	display: flex;
+	justify-content: center;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+.historyInfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 480px;
+}
+.historyInfo h3 {
+  font-family: 'Hahmlet', serif;
+  font-weight: 900;
+  text-align: left;
+  font-size: 40px;
+  color: #ce9500;
+  margin-bottom: 10px;
+}
+.historyInfo p {
+	letter-spacing: 0.5px;
+	font-weight: 100;
+}
+.historyPic {
+	margin-left: 100px;
+}
+.historyPic img {
+	max-width: 500px;
+}
+.blue {
+  color: #1c1f75;
+}
+.bottomLineBL {
+	border-bottom: 2px solid #ce9500;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+.boldEffect {
+  font-weight: 500;
+}
+@media screen and (max-width: 68em) {
+  .brandHistory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .brandHistory h3 {
+    text-align: center;
+    font-size: 40px;
+  }
+  .brandHistory p {
+    text-align: center;
+  }
+  .historyPic {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .historyPic img {
+    max-width: 400px;
+  }
+}
+
+/* Label Section Start */
+
+.labelSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../images/labelBackground-100.jpg);
+  background-position: center;
+}
+
+.theLabel {
+  font-family: 'Hahmlet', serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 30px;
+  color: #fffcf8;
+  border-bottom: 5px solid #1c1f75;
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+.labelSVG {
+  display: flex;
+  align-content: center;
+  margin-bottom: 100px;
+
+}
+.labelSVG img {
+  width: 800px;
+}
+
+@media screen and (max-width: 68em) {
+  .labelSection {
+    background-position: center;
+  }
+  .labelSVG img {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 50em) {
+  .labelSection {
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .labelSVG img {
+    width: 400px;
+  }
+}
+
+/* The bottle */
+
+.bottleSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.theBottle {
+  font-family: 'Hahmlet', serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 30px;
+  color: #1c1f75;
+  border-bottom: 5px solid #ce9500;
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+.bottleJPG {
+  display: flex;
+  align-content: center;
+
+}
+.bottleJPG img {
+  width: 700px;
+}
+
+@media screen and (max-width: 68em) {
+  .bottleJPG img {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 50em) {
+  .bottleJPG img {
+    width: 400px;
+  }
+}
+
+/* End page simbol */
+.endPageSec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.endPageLogo {
+  /*! margin: 0 20px; */
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.endPageLogo img {
+  width: 200px;
+  /*! margin: 0 20px; */
+}
+
+.backHomeButton {
+	display: flex;
+	justify-content: center;
+}
+.backHome {
+	margin: 60px 0;
+	font-family: 'Hahmlet', serif;
+	font-weight: 900;
+}
+.backHome:hover {
+	border-bottom: 3px solid #ce9500;
+	transition: all .1s ease;
+}
+
+
+	/*background-image: url(../images/bakcground-100.jpg);*/
+/* Foot start */
+
+.foot {
+		display: flex;
+		background-color: #1c1f75;
+		justify-content: center;
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+}
+
+.f-logo {
+		display: flex;
+		width: 100px;
+		padding-right: 20px;
+
+}
+
+.border-bottom {
+		display: block;
+		border:0;
+		border-bottom: 2px solid #ce9500;
+		width: 260px;
+		background-color: transparent;
+		margin-bottom: 10px;
+		color: #fffcf8;
+}
+
+.border-submit {
+		border:0;
+		border: 2px solid #ce9500;
+	  color: #1c1f75;
+		background-color: #fffcf8;
+
+}
+
+.border-submit:hover {
+		background-color: #1c1f75;
+		color: #fffcf8;
+		transition: all .1s ease;
+}
+
+.f-text {
+		font-family: 'Hahmlet', serif;
+		color: #ce9500;
+		font-size: 20px;
+		margin-bottom: 10px;
+}
+
+.f-form input {
+		font-family: 'Georama', Helvetica, Arial, sans-serif;
+}
+
+.f-form {
+		display: flex;
+		flex-direction: row;
+}
