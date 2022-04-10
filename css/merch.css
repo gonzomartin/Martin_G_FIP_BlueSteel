@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+.hide {
+	display: none;
+}
+
+body {
+	font-family: 'Georama', Helvetica, Arial, sans-serif;
+	/*! padding: 20px; */
+  background-color: #fffcf8;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Navigation Set up */
+
+
+.navMenu button {
+	background: url(../assets/burgerIcon.svg) left no-repeat;
+	height: 20px;
+	width: 20px;
+	border: 1px;
+	transition: all .3s ease;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.navMenu button.expanded {
+	transform: rotate(90deg);
+}
+
+.navMenu {
+	align-self: center;
+}
+
+.navMenu li a {
+	display: block;
+	padding: 10px 0 10px 0;
+	text-align: left;
+}
+.navMenu li a:hover {
+	border-bottom: 3px solid #ce9500;
+	font-weight: 700;
+}
+
+.select {
+  font-weight: 700;
+}
+
+.navMenu li:first-child {
+	border-top: 2px solid #ce9500;
+}
+
+.burgerMenu {
+  margin-bottom: 10px;
+	display: none;
+	text-align: right;
+}
+
+.burgerMenu.slideToggle {
+	display: block;
+	margin-left: 20px;
+}
+
+.header {
+	display: flex;
+}
+
+.logo {
+	flex-direction: column;
+	justify-content: center;
+	max-width: 180px;
+}
+
+
+@media screen and (min-width: 50em) {
+
+  #button {
+    display: none;
+  }
+
+  .burgerMenu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navMenu {
+    text-align: left;
+    margin-left: auto;
+    margin-right: 5%;
+  }
+  .navMenu li {
+    border-bottom: none;
+    display: inline;
+    margin-left: 20px;
+  }
+  .navMenu li a {
+    display: inline;
+    padding: 5px 0 5px 0;
+    text-decoration: none;
+    color: #1c1f75;
+  }
+  .navMenu li a:hover {
+    border-bottom: 3px solid #ce9500;
+    padding-bottom: 5px;
+    background-color: transparent;
+    font-weight: 700;
+  }
+  .navMenu li:first-child {
+    border-top: none;
+  }
+
+	.header {
+		display: flex;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.logo {
+		flex: auto;
+		max-width: 180px;
+		margin-left: 5%;
+	}
+}
+
+
+
+/* Main Banner Section */
+
+.mainBanner {
+	display: flex;
+	background-image: url(../images/bannerMerch.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #000000;
+	background-size: cover;
+	height: 1080px;
+}
+
+
+@media screen and (max-width: 80em) {
+  .mainBanner {
+		height: 700px;
+	}
+}
+@media screen and (max-width: 50em) {
+  .mainBanner {
+		height: 400px;
+	}
+}
+
+.bottomLine {
+  border-bottom: 2px solid #ce9500;
+  max-width: 100%;
+  margin-bottom: 20px;
+	align-self: baseline;
+	padding-bottom: 20px;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.pageCount {
+  margin-left: 5%;
+  margin-bottom: 20px;
+}
+.countCont {
+  display: flex;
+}
+
+.selected {
+  font-family: 'Georama', Helvetica, Arial, sans-serif;
+  color: #ce9500;
+  font-weight: 700;
+}
+.notselected {
+  font-family: 'Georama', Helvetica, Arial, sans-serif;
+  color: #ce9500;
+  font-weight: 300;
+}
+
+.backHomeButton {
+	display: flex;
+	justify-content: center;
+}
+.backHome {
+	margin: 80px 0;
+	font-family: 'Hahmlet', serif;
+	font-weight: 900;
+}
+.backHome:hover {
+	border-bottom: 3px solid #ce9500;
+	transition: all .1s ease;
+}
+
+/*Merch section*/
+
+.merchCont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cont {
+  cursor: pointer;
+  margin: 30px;
+}
+.cont:hover {
+  border: 1px solid rgb(206, 149, 0);
+  transition: all .3s ease;
+}
+.texts {
+  text-align: center;
+  margin-top: 10px;
+}
+.texts h2 {
+  font-family: 'Georama', Helvetica, Arial, sans-serif;
+  color: #1c1f75;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.texts h3 {
+	font-weight: 300;
+	font-size: 15px;
+}
+
+.texts h4 {
+  font-family: 'Georama', Helvetica, Arial, sans-serif;
+  color: #ce9500;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+
+/* Foot start */
+
+.foot {
+		display: flex;
+		background-color: #1c1f75;
+		justify-content: center;
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+}
+
+.f-logo {
+		display: flex;
+		width: 100px;
+		padding-right: 20px;
+
+}
+
+.border-bottom {
+		display: block;
+		border:0;
+		border-bottom: 2px solid #ce9500;
+		width: 260px;
+		background-color: transparent;
+		margin-bottom: 10px;
+		color: #fffcf8;
+}
+
+.border-submit {
+		border:0;
+		border: 2px solid #ce9500;
+	  color: #1c1f75;
+		background-color: #fffcf8;
+
+}
+
+.border-submit:hover {
+		background-color: #1c1f75;
+		color: #fffcf8;
+		transition: all .1s ease;
+}
+
+.f-text {
+		font-family: 'Hahmlet', serif;
+		color: #ce9500;
+		font-size: 20px;
+		margin-bottom: 10px;
+}
+
+.f-form input {
+		font-family: 'Georama', Helvetica, Arial, sans-serif;
+}
+
+.f-form {
+		display: flex;
+		flex-direction: row;
+}

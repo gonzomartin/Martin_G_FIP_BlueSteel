@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Index Page</title>
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/shopnow.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Georama:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="assets/blueSteel_logo.svg" alt="BlueSteel Logo" class="bsLogo"></a>
+    </div>
+    <nav class="navMenu">
+      <h2 class="hide">Main Menu</h2>
+      <button id="button"></button>
+      <div class="burgerMenu">
+        <ul class="menuList">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ourbeer.html">Our Beer</a></li>
+          <li class="select"><a href="shopnow.html">Shop Now</a></li>
+          <li><a href="merch.html">Merch</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="mainBanner">
+    <h2 class="hide">Principal Banner</h2>
+  </section>
+  <div class="bottomLine"></div>
+
+  <section class="pageCount">
+    <h2 class="hide">Page Count links nav</h2>
+    <div class="countCont">
+      <a href="index.html"><h3 class="notselected">Home / </h3></a>
+      <a href="shopnow.html"><h3 class="selected"> Shop Now</h3></a>
+    </div>
+  </section>
+
+  <section class="productInfoCont">
+    <h2 class="hide">Product Info Navigation</h2>
+    <div class="prodCont">
+      <div class="productPicCont">
+        <div class="bigPics" style="right: 0">
+          <img src="images/v1-100.jpg" alt="Product picture">
+          <img src="images/v2-100.jpg" alt="Product picture">
+          <img src="images/v3-100.jpg" alt="Product picture">
+          <img src="images/v4-100.jpg" alt="Product picture">
+          <img src="images/v5-100.jpg" alt="Product picture">
+        </div>
+      </div>
+      <nav class="picsMenu">
+        <ul class="navList">
+          <li><div class="productContainer v1" data-offset="0"></div></li>
+          <li><div class="productContainer v2" data-offset="1"></div></li>
+          <li><div class="productContainer v3" data-offset="2"></div></li>
+          <li><div class="productContainer v4" data-offset="3"></div></li>
+          <li><div class="productContainer v5" data-offset="4"></div></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="prodTextCont">
+      <div class="prodInfo">
+        <div class="prodTitle">
+          <h2 class="category">SPORT BEER</h2>
+          <h3 class="prodName">BLUE STEEL</h3>
+        </div>
+        <p>Our incredible anti - chafe beer created for athletes. It comes in a 4 pack presentation, each bottle with 1 liter of our delightful elixir that have been brewed with the greatest wheat and tea tree oil.</p>
+      </div>
+      <div class="prodFacts">
+        <div class="prodList">
+          <h3>4 x 1 L Bottle / 4,9% Alc./Vol / Made in: <a>Canada</a> </h3>
+        </div>
+        <div class="price">
+          <h2>$ 20.45</h2>
+        </div>
+        <div class="stars">
+          <img src="assets/Stars.svg" alt="BlueSteel Logo" class="Stars Review">
+        </div>
+        <div class="quantity">
+          <img src="assets/quantity.svg" alt="BlueSteel Logo" class="Stars Review">
+        </div>
+        <div class="instock">
+          <img src="assets/instock.svg" alt="BlueSteel Logo" class="Stars Review">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="backHomeButton">
+    <h2 class="hide">Back home Button</h2>
+    <a href="shopnow.html" class="backHome">Back to top</a>
+  </div>
+
+  <footer class="foot">
+    <h2 class="hide">Footer</h2>
+    <div class="f-logo">
+      <img src="assets/Shild.svg" alt="Shield Blue Steel">
+    </div>
+    <div class="f-form">
+              <div>
+                  <div>
+                      <h3 class="f-text">Want to say thanks?</h3>
+                  </div>
+                  <form action="email.php" method="POST" enctype="text/plain">
+                      <input class="border-bottom" name="contactInfo" type="text" required placeholder="Name">
+                      <input class="border-bottom" name="contactInfo" type="text" required placeholder="Email">
+                      <input class="border-submit" name="submit" type="submit" value="Submit">
+                  </form>
+              </div>
+    </div>
+  </footer>
+
+
+<script src="js/shopnow.js"></script>
+</body>
+</html>

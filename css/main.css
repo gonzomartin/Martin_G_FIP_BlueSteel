@@ -188,7 +188,7 @@ a {
 	text-decoration: underline solid 4px #ce9500;
 }
 .bottomLine {
-  border-bottom: 3px solid #ce9500;
+  border-bottom: 2px solid #ce9500;
   max-width: 100%;
   margin-bottom: 20px;
 	align-self: baseline;
@@ -265,7 +265,7 @@ a {
 
 }
 .bottomLineBL {
-	border-bottom: 3px solid #ce9500;
+	border-bottom: 2px solid #ce9500;
   max-width: 100%;
   margin-bottom: 10px;
 	align-self: baseline;
@@ -274,18 +274,19 @@ a {
 .brandLogoType img {
 	max-width: 300px;
 }
-.shopNow {
+.shopnowbutton {
 	border: 3px solid #ce9500;
 	font-family: 'Hahmlet', serif;
 	font-weight: 900;
+	text-align: center;
 	margin-top: 10px;
 	width: 150px;
-	height: auto;
+	height: 20px;
 	color: #1c1f75;
 	background-color: #fffcf8;
 	cursor: pointer;
 }
-.shopNow:hover {
+.shopnowbutton:hover {
 	color: #fffcf8;
 	background-color: #1c1f75;
 	transition: all .1s ease;
@@ -323,13 +324,20 @@ a {
 		margin: 0;
 	}
 	.brandLogoType img {
-	max-width: 200px;
+		max-width: 200px;
 	}
 	.paragraph {
 		display: flex;
 		justify-content: center;
 	}
-
+	.shopNow {
+		display: flex;
+		justify-content: center;
+	}
+	.shopNowCont {
+		display: flex;
+		justify-content: center;
+	}
 }
 
 .backHomeButton {
@@ -344,7 +352,6 @@ a {
 .backHome:hover {
 	border-bottom: 3px solid #ce9500;
 	transition: all .1s ease;
-
 }
 
 /* Footer start */

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Index Page</title>
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/ourbeer.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Georama:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="assets/blueSteel_logo.svg" alt="BlueSteel Logo" class="bsLogo"></a>
+    </div>
+    <nav class="navMenu">
+      <h2 class="hide">Main Menu</h2>
+      <button id="button"></button>
+      <div class="burgerMenu">
+        <ul class="menuList">
+          <li><a href="index.html">Home</a></li>
+          <li class="select"><a href="ourbeer.html">Our Beer</a></li>
+          <li><a href="shopnow.html">Shop Now</a></li>
+          <li><a href="merch.html">Merch</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="brandVideo">
+    <h2 class="hide">Brand Video Promotion</h2>
+    <div class="videoContainer">
+      <video src="video/BrandVideo.mp4" class="videoB" controls></video>
+    </div>
+  </section>
+  <div class="bottomLine"></div>
+
+  <section class="pageCount">
+    <h2 class="hide">Page Count links nav</h2>
+    <div class="countCont">
+      <a href="index.html"><h3 class="notselected">Home / </h3></a>
+      <a href="ourbeer.html"><h3 class="selected"> Our Beer</h3></a>
+    </div>
+  </section>
+
+  <section class="brandHistory">
+    <h2 class="hide">brand History</h2>
+    <div class="historyInfo">
+      <h3>USE BEFORE,
+      <br> DURING AND
+      <br>AFTER <a class="blue">SPORTS.</a></h3>
+      <div class="bottomLineBL"></div>
+      <div class="paragraph">
+        <p>From the Hoegaareden Brevery we have create or new Blue Steel Anti-Chafe Beer made it with tea tree, specialy create for athletes that loves beer and want to try something inovated that provides the same happiness as a normal beer, but with special powers to help you during your sports routines. <a class="boldEffect">Provides protection against blisters, skin rashes and saddle sores for athletes.</a></p>
+      </div>
+    </div>
+    <div class="historyPic">
+      <img src="images/brandHistory-100.jpg" alt="brand History">
+    </div>
+  </section>
+
+  <section class="labelSection">
+    <h2 class="hide">The Label</h2>
+    <div class="theLabel">
+      <h3>THE LABEL</h3>
+    </div>
+    <div class="labelSVG">
+      <img src="assets/labelSVG.svg" alt="Label">
+    </div>
+  </section>
+
+  <section class="bottleSection">
+    <h2 class="hide">The Bottle</h2>
+    <div class="theBottle">
+      <h3>THE BOTTLE</h3>
+    </div>
+    <div class="bottleJPG">
+      <img src="images/bottle.jpg" alt="Bottle">
+    </div>
+  </section>
+
+  <div class="backHomeButton">
+    <h2 class="hide">Back home Button</h2>
+    <a href="ourbeer.html" class="backHome">Back to top</a>
+  </div>
+
+  <section class="endPageSec">
+    <h2 class="hide">end page simbol</h2>
+    <div class="endPageLogo">
+      <img src="assets/endPage.svg" alt="End Page Logo">
+    </div>
+  </section>
+
+
+  <footer class="foot">
+    <h2 class="hide">Footer</h2>
+    <div class="f-logo">
+      <img src="assets/Shild.svg" alt="Shield Blue Steel">
+    </div>
+    <div class="f-form">
+              <div>
+                  <div>
+                      <h3 class="f-text">Want to say thanks?</h3>
+                  </div>
+                  <form action="email.php" method="POST" enctype="text/plain">
+                      <input class="border-bottom" name="contactInfo" type="text" required placeholder="Name">
+                      <input class="border-bottom" name="contactInfo" type="text" required placeholder="Email">
+                      <input class="border-submit" name="submit" type="submit" value="Submit">
+                  </form>
+              </div>
+    </div>
+  </footer>
+
+
+<script src="js/ourbeer.js"></script>
+</body>
+</html>
